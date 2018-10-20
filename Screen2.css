@@ -1,0 +1,37 @@
+/* This is for screned devices */
+
+/*
+1. Import are first
+2. General style Rules 
+3. Mobile First devices
+4. Larger Screen Sizes (Media Query Required)*/
+
+/* 1. Import statement */
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+
+/* 2. General style Rules */
+html{
+    box-sizing: border-box;
+}
+
+*,*:before, *:after{
+    box-sizing: inherit
+}
+.title{
+    background-color:rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 15px;
+}
+/* 2.1 Typhography section */
+h1,h2,h3,h4,h5,h6{
+    font-family:sansita, sans-serif;
+}
+
+body{
+    font-family: Helvetica, sans-serif;
+    font-size:18px;
+}
+
+/* 3. Mobile Rules */
+
