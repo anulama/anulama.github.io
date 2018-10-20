@@ -23,6 +23,24 @@ html{
     border: 1px solid;
     border-radius: 15px;
 }
+nav ul li{
+    display: inline-block;
+    list-style: none;
+}
+nav{
+    position: fixed;
+    background-color: aquamarine;
+    width: 13in;
+    bottom: 0;
+    left: 0;
+}
+footer{
+    margin-bottom: 2em;
+}
+#site-brand{
+    front-size: 2em;
+    front-weight: 600;
+}
 /* 2.1 Typhography section */
 h1,h2,h3,h4,h5,h6{
     font-family:sansita, sans-serif;
