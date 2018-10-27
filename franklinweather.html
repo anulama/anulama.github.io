@@ -4,126 +4,124 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
+    <meta name="description" content="Short Description of the page.">
 
-<meta name="description" content="Short Description of the page.">
+    <meta name="viewport" content="width=device-width">
 
-<meta name="viewport" content="width=device-width">
-
-<link href="Screen2.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="Screen2.css" rel="stylesheet" type="text/css" media="screen">
 
 </head>
 
 
 
-<body> 
-
-<header>
-<p>
-<img src= "images/logo.jpeg"><b>The Weather Site</b>
-</p>
-
-<nav>
-<ul>
-
-<li>Current</li>
-
-<li>Search</li>
-
-<li>Franklin ID</li>
-
-<li>Greenville SC</li>
-
-</ul>
-</nav>
-
-</header> 
-
-<main>
-
-<h1>Franklin, Idaho</h1>
-
-<p><b>Zip:</b>83237
-
-    <b>Elevation:</b>4968 ft.
-    
-    <b>Location:</b>42.0135,111.8072
-    </p>
-
-    <div><section id="temps" class="title"><h2><b>Temperature</b></h2>
-
-        <p><b>55 F</b><br>
-        
-        64F 41F<br></section>
-    
-    
-    <section id="temps" class="title"><h2><b>Wind</b></h2>
-    
+<body>
+    <div id="container">
+    <header>
         <p>
-        
-        N
-        
-        5 mph
-        
-        <ul>
-        
-        <li><b>Direction:</b>SW</li>
-        
-        <li><b>Gusts:</b>5mph</li>
+            <img src="images/logo.jpeg"><b>The Weather Site</b>
+        </p>
+
+        <nav>
+            <ul>
+
+                <li>Current</li>
+
+                <li>Search</li>
+
+                <li>Franklin ID</li>
+
+                <li>Greenville SC</li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1>Franklin, Idaho</h1>
+
+        <p class="small"><b>Zip:</b>83237 |
+
+            <b>Elevation:</b>4968 ft. |
+
+            <b>Location:</b>42.0135,111.8072
+        </p>
+
+        <div id="sectionContainer">
+            <section id="temp" class="title">
+                <h2><b>Temperature</b></h2>
+
+                <p class="big">55&deg;F</p>
+
+                <p><span class="red">64&deg;F</span> <span class="blue">41&deg;F</span></p><br>
+            </section>
+            <br/>
+            <section id="wind" class="title">
+                <h2><b>Wind</b></h2>
+
+                <p> N</p>
+                <p> 5 mph</p>
+
+                <ul>
+                    <li><b>Direction:</b>SW</li>
+
+                    <li><b>Gusts:</b>5mph</li>
+                </ul>
+            </section>
+            <br/>
+            <section id="weather" class="title">
+
+                <h2><b>Rain</b></h2>
+                <img src="images/rain-drop.jpg" alt="rain drop" />
+            </section>
+        </div>
+
+        <br /><br />
+        <section id="forecast" class="title">
+            <h3>Hourly Forecast</h3>
+            <p>
+                12am: 41
+                1am : 41
+                2am: 41
+                3am: 41
+                4am: 41
+                5am: 41
+                6am: 42
+                7am: 44
+                8am: 44
+                9am: 46
+                10am: 49
+                11am: 51
+                12pm: 55
+                1pm: 58
+                2pm: 62
+                3pm: 64
+                4pm: 64
+                5pm: 62
+                6pm: 61
+                7pm: 60
+                8pm: 59
+                9pm: 58
+                10pm: 52
+                11pm: 48
+            </p>
         </section>
-    
-    <section id="temps" class="title"></ul>
-    
-    </p>
-    
-    <h2><b>Rain</b></h2>
-    
-    </section>
+
+
+
+
+
+    </main>
+
+    <footer>
+
+        &copy;2018 The Weather Site
+
+    </footer>
     </div>
-
-
-<section id="temps" class="title"><h3>Hourly Forecast</h3>
-
-    12am: 41
-    1am : 41
-    2am: 41
-    3am: 41
-    4am: 41
-    5am: 41
-    6am: 42
-    7am: 44
-    8am: 44
-    9am: 46
-    10am: 49
-    11am: 51
-    12pm: 55
-    1pm: 58
-    2pm: 62
-    3pm: 64
-    4pm: 64
-    5pm: 62
-    6pm: 61
-    7pm: 60
-    8pm: 59
-    9pm: 58
-    10pm: 52
-    11pm: 48
-</section>
-
-
-
-
-
-</main>
-
-<footer>
-
-&copy;2018 The Weather Site
-
-</footer>
-
 </body>
 
 </html>
-

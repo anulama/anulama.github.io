@@ -10,8 +10,20 @@
 @import url('https://fonts.googleapis.com/css?family=Sansita');
 
 /* 2. General style Rules */
+
+
+/* 3. Mobile Rules */
 header{
     font-size: 100%;
+}
+
+header img {
+    width: 20%;
+}
+
+#container {
+    width: 95%;
+    margin: 0 auto;
 }
 html{
     box-sizing: border-box;
@@ -22,28 +34,65 @@ html{
 }
 .title{
     background-color:rgba(200,200,200,.6);
-    margin: .2em auto;
     border: 1px solid;
     border-radius: 15px;
     text-align: center;
 }
 nav ul li{
-    display: inline-block;
     list-style: none;
 }
 nav{
     position: fixed;
-    background-color: blue;
+    background-color: white;
     width: 100%;
     bottom: 0;
     left: 0;
+    border: 2px solid;
 }
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 0;
+}
+
 footer{
     margin-bottom: 2em;
 }
-#site-brand{
-    front-size: 2em;
-    front-weight: 600;
+
+.small{
+    font-size: 2vh;
+    text-align: center;
+}
+
+section ul{
+    list-style-type: none;
+}
+
+.big {
+    font-size: 10vh;
+    font-weight: bold;
+}
+
+.red{
+    color:red;
+}
+
+.blue{
+    color:blue;
+}
+
+#weather img{
+    width: 80%;
+}
+
+#sectionContainer section {
+    padding: 5px;
+}
+
+#forecast {
+    display: none;
 }
 /* 2.1 Typhography section */
 h1,h2,h3,h4,h5,h6{
@@ -55,5 +104,41 @@ body{
     font-size:18px;
 }
 
-/* 3. Mobile Rules */
+/* 4.Larger screen Rules*/
+@media screen and (min-width: 1026px) {
+   /* All CSS rule for large screens go here*/
+   header img {
+    width: 10%;
+}
+
+header p {
+    font-size: 8vh;
+}
+   nav{
+    position: relative;
+    font-size: 4vh;
+   }
+
+   nav ul{
+       padding: 4px;
+   }
+
+   .small{
+       font-size: 4vh;
+       text-align: left;
+   }
+
+   #sectionContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#sectionContainer section{
+    width: 30%;
+}
+
+#forecast{
+    display: block;
+}
+}
 
