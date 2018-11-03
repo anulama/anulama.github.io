@@ -140,11 +140,5 @@ header p {
     display: block;
 }
 
-
-nav {
-    position: sticky;
-    right: 0;
-    top: 0px;
-}
 }
 
