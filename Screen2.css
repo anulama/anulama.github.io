@@ -105,7 +105,7 @@ body{
 }
 
 /* 4.Larger screen Rules*/
-@media screen and (min-width: 1026px) {
+@media screen and (min-width: 700px) {
    /* All CSS rule for large screens go here*/
    header img {
     width: 10%;
@@ -115,7 +115,6 @@ header p {
     font-size: 8vh;
 }
    nav{
-    position: relative;
     font-size: 4vh;
    }
 
@@ -139,6 +138,13 @@ header p {
 
 #forecast{
     display: block;
+}
+
+
+nav {
+    position: sticky;
+    right: 0;
+    top: 0px;
 }
 }
 
