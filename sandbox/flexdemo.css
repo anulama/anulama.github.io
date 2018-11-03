@@ -1,0 +1,14 @@
+section{
+    border: 1px dashed #000;
+}
+
+
+@media screen and (min-width: 760px){
+    #background, nav>ul{
+        display: flex;
+        justify-content: space-around;
+ }
+ #hourly-temps>ul{
+     display:
+ }
+}
