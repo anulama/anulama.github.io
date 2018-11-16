@@ -3,4 +3,4 @@
 ******************************/
 //weatehr site JavaScript Functions
 
-consol.log('My javaScrip is being read.');
+console.log('My javaScrip is being read.');
