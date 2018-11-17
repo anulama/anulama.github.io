@@ -51,16 +51,18 @@
             <b>Location:</b>42.0135,111.8072
         </p>
 
-        <div id="sectionContainer">
+        <div id="sectionContainer" class="clear">
             <section id="temp" class="title">
                 <h2><b>Temperature</b></h2>
 
                 <p class="big">55&deg;F</p>
 
                 <p><span class="red">64&deg;F</span> <span class="blue">41&deg;F</span></p><br>
+                <p>Feels like <span id="feelTemp">21</span>&deg;F</p>
             </section>
             <br/>
             <section id="wind" class="title">
+                <div id="dial" class="w"></div>
                 <h2><b>Wind</b></h2>
 
                 <p> N</p>
@@ -75,7 +77,7 @@
             <br/>
             <section id="weather" class="title">
 
-                <h2><b>Rain</b></h2>
+                <h2><b><span id="conditionWeather">Rain</span></b></h2>
                 <img src="images/rain-drop.jpg" alt="rain drop" />
             </section>
         </div>
@@ -123,7 +125,7 @@
 
     </footer>
     </div>
-    <script src="/franklin weather/js/functions.js"></script>
+    <script src="franklin weather/js/functions.js"></script>
 </body>
 
 </html>

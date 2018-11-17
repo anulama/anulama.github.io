@@ -13,6 +13,72 @@
 
 
 /* 3. Mobile Rules */
+
+#dial {
+
+    height: 150px;
+    
+    width: 150px;
+    
+    background: no-repeat center/85% url('responsive_media/images/wind-pointer.png');
+    
+    z-index: 100;
+    
+    margin: -.6em auto 0;
+    
+    transform: rotate(270deg);
+    
+    }
+    
+    
+    
+    #dial.n{
+    
+    transform: rotate(0deg);
+    
+    }
+    
+    #dial.ne{
+    
+    transform: rotate(45deg);
+    
+    }
+    
+    #dial.nw{
+    
+    transform: rotate(315deg);
+    
+    }
+    
+    #dial.e{
+    
+    transform: rotate(90deg);
+    
+    }
+    
+    #dial.s{
+    
+    transform: rotate(180deg);
+    
+    }
+    
+    #dial.sw{
+    
+    transform: rotate(225deg);
+    
+    }
+    
+    #dial.se{
+    
+    transform: rotate(135deg);
+    
+    }
+    
+    #dial.w{
+    
+    transform: rotate(270deg);
+    
+    }
 header{
     font-size: 100%;
 }
@@ -20,6 +86,35 @@ header{
 header img {
     width: 20%;
 }
+
+#sectionContainer {
+    background-size: cover;
+   }
+
+/* Background pictures for summary */
+.clear {
+    background-image: url("responsive_media/images/clear_300.jpg");
+   }
+
+/* Background pictures for summary */
+.fog {
+    background-image: url("responsive_media/images/fog_300.jpg");
+   }
+
+/* Background pictures for summary */
+.snow {
+    background-image: url("responsive_media/images/snow_300.jpg");
+   }
+
+/* Background pictures for summary */
+.rain {
+    background-image: url("responsive_media/images/rain_300.jpg");
+   }
+
+/* Background pictures for summary */
+.clouds {
+    background-image: url("responsive_media/images/clear_300.jpg");
+   }
 
 #container {
     width: 95%;
@@ -106,6 +201,30 @@ body{
 
 /* 4.Larger screen Rules*/
 @media screen and (min-width: 700px) {
+    .clear {
+        background-image: url("responsive_media/images/clear_500.jpg");
+       }
+    
+    /* Background pictures for summary */
+    .fog {
+        background-image: url("responsive_media/images/fog_500.jpg");
+       }
+    
+    /* Background pictures for summary */
+    .snow {
+        background-image: url("responsive_media/images/snow_500.jpg");
+       }
+    
+    /* Background pictures for summary */
+    .rain {
+        background-image: url("responsive_media/images/rain_500.jpg");
+       }
+    
+    /* Background pictures for summary */
+    .clouds {
+        background-image: url("responsive_media/images/clear_500.jpg");
+       }
+    
    /* All CSS rule for large screens go here*/
    header img {
     width: 10%;
