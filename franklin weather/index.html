@@ -1,38 +1,132 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+
+<html lang="en-us">
+
 <head>
+<title>Franklin, ID</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
-    <title>anu Lama</title>
+
+    <meta name="description" content="Short Description of the page.">
+
+    <meta name="viewport" content="width=device-width">
+
+    <link href="Screen2.css" rel="stylesheet" type="text/css" media="screen">
+
 </head>
+
+
+
 <body>
- <ul>
- 
-    <li>   Anu Lama
-    <a href="https://jwilson717.github.io/homework/jl_design_analysis.html" title="Open design assignment">design assignmnet</a>
-</li>
+    <div id="container">
+    <header>
+        <h1>
+            <img src="images/logo.jpeg" alt="umbrella logo"><b>The Weather Site</b>
+        </h1>
 
-<li>   
-        <a href="https://anulama.github.io/weather.html" title= "weather site plan">Weather site</a>
-    </li>
+        <nav>
+            <ul>
 
-<li>
-     <a href="https://anulama.github.io/franklinweather.html" title= "franklin weather">franklin Weather</a>
-    </li>   
-    
-<li>
-    <a href="https://anulama.github.io/franklinweather.html" title= "franklin Small Screen">franklin Small screen</a>
-</li>
+                <li><a href="index.html">Current</a></li>
 
-<li>
-    <a href="https://anulama.github.io/franklinweather.html" title= "franklin large screen">franklin large screen</a>
-</li>
-<li>
-    <a href="https://anulama.github.io/presentation.html" title="presentation">presentation</a>
-</li>
-</ul>
+                <li><a href="#">Search</a></li>
 
+                <li><a href="franklinweather.html">Franklin ID</a></li>            
+
+
+                <li><a href="greenville.html">Greenville SC</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1>Franklin, Idaho</h1>
+
+        <p class="small"><b>Zip:</b>83237 |
+
+            <b>Elevation:</b>4968 ft. |
+
+            <b>Location:</b>42.0135,111.8072
+        </p>
+
+        <div id="sectionContainer" class="clear">
+            <section id="temp" class="title">
+                <h2><b>Temperature</b></h2>
+
+                <p class="big">55&deg;F</p>
+
+                <p><span class="red">64&deg;F</span> <span class="blue">41&deg;F</span></p><br>
+                <p>Feels like <span id="feelTemp">21</span>&deg;F</p>
+            </section>
+            <br/>
+            <section id="wind" class="title">
+               
+                <h2><b>Wind</b></h2>
+
+                <p> N</p>
+                <div id="dial" class="w"></div>
+                <p id="windspeed"> 5 mph</p>
+
+                <ul>
+                    <li><b>Direction:</b>SW</li>
+
+                    <li><b>Gusts:</b>5mph</li>
+                </ul>
+            </section>
+            <br/>
+            <section id="weather" class="title">
+
+                <h2><b><span id="conditionWeather">Rain</span></b></h2>
+                <img src="images/rain-drop.jpg" alt="rain drop" />
+            </section>
+        </div>
+
+        <br /><br />
+        <section id="forecast" class="title">
+            <h3>Hourly Forecast</h3>
+            <p>
+                12am: 41
+                1am : 41
+                2am: 41
+                3am: 41
+                4am: 41
+                5am: 41
+                6am: 42
+                7am: 44
+                8am: 44
+                9am: 46
+                10am: 49
+                11am: 51
+                12pm: 55
+                1pm: 58
+                2pm: 62
+                3pm: 64
+                4pm: 64
+                5pm: 62
+                6pm: 61
+                7pm: 60
+                8pm: 59
+                9pm: 58
+                10pm: 52
+                11pm: 48
+            </p>
+        </section>
+
+
+
+
+
+    </main>
+
+    <footer>
+
+        &copy;2018 The Weather Site
+
+    </footer>
+    </div>
+    <script src="js/functions.js"></script>
 </body>
+
 </html>

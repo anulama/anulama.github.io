@@ -3,7 +3,7 @@
 <html lang="en-us">
 
 <head>
-
+<title>Franklin, ID</title>
     <meta charset="UTF-8">
 
     <meta name="description" content="Short Description of the page.">
@@ -19,20 +19,21 @@
 <body>
     <div id="container">
     <header>
-        <p>
-            <img src="images/logo.jpeg"><b>The Weather Site</b>
-        </p>
+        <h1>
+            <img src="images/logo.jpeg" alt="umbrella logo"><b>The Weather Site</b>
+        </h1>
 
         <nav>
             <ul>
 
-                <li>Current</li>
+                <li><a href="index.html">Current</a></li>
 
-                <li>Search</li>
+                <li><a href="#">Search</a></li>
 
-                <li>Franklin ID</li>
+                <li><a href="franklinweather.html">Franklin ID</a></li>            
 
-                <li>Greenville SC</li>
+
+                <li><a href="greenville.html">Greenville SC</a></li>
 
             </ul>
         </nav>
@@ -50,20 +51,23 @@
             <b>Location:</b>42.0135,111.8072
         </p>
 
-        <div id="sectionContainer">
+        <div id="sectionContainer" class="clear">
             <section id="temp" class="title">
                 <h2><b>Temperature</b></h2>
 
                 <p class="big">55&deg;F</p>
 
                 <p><span class="red">64&deg;F</span> <span class="blue">41&deg;F</span></p><br>
+                <p>Feels like <span id="feelTemp">21</span>&deg;F</p>
             </section>
             <br/>
             <section id="wind" class="title">
+               
                 <h2><b>Wind</b></h2>
 
                 <p> N</p>
-                <p> 5 mph</p>
+                <div id="dial" class="w"></div>
+                <p id="windspeed"> 5 mph</p>
 
                 <ul>
                     <li><b>Direction:</b>SW</li>
@@ -74,7 +78,7 @@
             <br/>
             <section id="weather" class="title">
 
-                <h2><b>Rain</b></h2>
+                <h2><b><span id="conditionWeather">Rain</span></b></h2>
                 <img src="images/rain-drop.jpg" alt="rain drop" />
             </section>
         </div>
@@ -122,6 +126,7 @@
 
     </footer>
     </div>
+    <script src="js/functions.js"></script>
 </body>
 
 </html>

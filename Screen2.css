@@ -10,7 +10,9 @@
 @import url('https://fonts.googleapis.com/css?family=Sansita');
 
 /* 2. General style Rules */
-
+.hide{
+    display: none;
+  }
 
 /* 3. Mobile Rules */
 
@@ -30,6 +32,11 @@
     
     }
     
+    #windspeed {
+        font-size: 1em;
+        margin-top: -5em;
+        margin-bottom: 5em;
+    }
     
     
     #dial.n{
