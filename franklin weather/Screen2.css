@@ -10,83 +10,91 @@
 @import url('https://fonts.googleapis.com/css?family=Sansita');
 
 /* 2. General style Rules */
-.hide{
+.hide {
     display: none;
-  }
+}
+
+.forecasthours {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+}
 
 /* 3. Mobile Rules */
 
 #dial {
 
     height: 150px;
-    
+
     width: 150px;
-    
+
     background: no-repeat center/85% url('responsive_media/images/wind-pointer.png');
-    
+
     z-index: 100;
-    
+
     margin: -.6em auto 0;
-    
+
     transform: rotate(270deg);
-    
-    }
-    
-    #windspeed {
-        font-size: 1em;
-        margin-top: -5em;
-        margin-bottom: 5em;
-    }
-    
-    
-    #dial.n{
-    
+
+}
+
+#windspeed {
+    font-size: 1em;
+    margin-top: -5em;
+    margin-bottom: 5em;
+}
+
+
+#dial.n {
+
     transform: rotate(0deg);
-    
-    }
-    
-    #dial.ne{
-    
+
+}
+
+#dial.ne {
+
     transform: rotate(45deg);
-    
-    }
-    
-    #dial.nw{
-    
+
+}
+
+#dial.nw {
+
     transform: rotate(315deg);
-    
-    }
-    
-    #dial.e{
-    
+
+}
+
+#dial.e {
+
     transform: rotate(90deg);
-    
-    }
-    
-    #dial.s{
-    
+
+}
+
+#dial.s {
+
     transform: rotate(180deg);
-    
-    }
-    
-    #dial.sw{
-    
+
+}
+
+#dial.sw {
+
     transform: rotate(225deg);
-    
-    }
-    
-    #dial.se{
-    
+
+}
+
+#dial.se {
+
     transform: rotate(135deg);
-    
-    }
-    
-    #dial.w{
-    
+
+}
+
+#dial.w {
+
     transform: rotate(270deg);
-    
-    }
-header{
+
+}
+
+header {
     font-size: 100%;
 }
 
@@ -96,54 +104,60 @@ header img {
 
 #sectionContainer {
     background-size: cover;
-   }
+}
 
 /* Background pictures for summary */
 .clear {
     background-image: url("../responsive_media/images/clear_300.jpg");
-   }
+}
 
 /* Background pictures for summary */
 .fog {
     background-image: url("../responsive_media/images/fog_300.jpg");
-   }
+}
 
 /* Background pictures for summary */
 .snow {
     background-image: url("../responsive_media/images/snow_300.jpg");
-   }
+}
 
 /* Background pictures for summary */
 .rain {
     background-image: url("../responsive_media/images/rain_300.jpg");
-   }
+}
 
 /* Background pictures for summary */
 .clouds {
-    background-image: url("../responsive_media/images/clear_300.jpg");
-   }
+    background-image: url("../responsive_media/images/clouds_300.jpg");
+}
 
 #container {
     width: 95%;
     margin: 0 auto;
 }
-html{
+
+html {
     box-sizing: border-box;
 }
 
-*,*:before, *:after{
+*,
+*:before,
+*:after {
     box-sizing: inherit
 }
-.title{
-    background-color:rgba(200,200,200,.6);
+
+.title {
+    background-color: rgba(200, 200, 200, .6);
     border: 1px solid;
     border-radius: 15px;
     text-align: center;
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
 }
-nav{
+
+nav {
     position: fixed;
     background-color: white;
     width: 100%;
@@ -152,23 +166,23 @@ nav{
     border: 2px solid;
 }
 
-nav ul{
+nav ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-left: 0;
 }
 
-footer{
+footer {
     margin-bottom: 2em;
 }
 
-.small{
+.small {
     font-size: 2vh;
     text-align: center;
 }
 
-section ul{
+section ul {
     list-style-type: none;
 }
 
@@ -177,15 +191,15 @@ section ul{
     font-weight: bold;
 }
 
-.red{
-    color:red;
+.red {
+    color: red;
 }
 
-.blue{
-    color:blue;
+.blue {
+    color: blue;
 }
 
-#weather img{
+#weather img {
     width: 80%;
 }
 
@@ -196,75 +210,86 @@ section ul{
 #forecast {
     display: none;
 }
+
 /* 2.1 Typhography section */
-h1,h2,h3,h4,h5,h6{
-    font-family:sansita, sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: sansita, sans-serif;
 }
 
-body{
+body {
     font-family: Helvetica, sans-serif;
-    font-size:18px;
+    font-size: 18px;
 }
 
 /* 4.Larger screen Rules*/
 @media screen and (min-width: 700px) {
+    
+nav {
+    position: relative;
+}
     .clear {
         background-image: url("../responsive_media/images/clear_500.jpg");
-       }
-    
+    }
+
     /* Background pictures for summary */
     .fog {
         background-image: url("../responsive_media/images/fog_500.jpg");
-       }
-    
+    }
+
     /* Background pictures for summary */
     .snow {
         background-image: url("../responsive_media/images/snow_500.jpg");
-       }
-    
+    }
+
     /* Background pictures for summary */
     .rain {
         background-image: url("../responsive_media/images/rain_500.jpg");
-       }
-    
+    }
+
     /* Background pictures for summary */
     .clouds {
-        background-image: url("../responsive_media/images/clear_500.jpg");
-       }
-    
-   /* All CSS rule for large screens go here*/
-   header img {
-    width: 10%;
+        background-image: url("../responsive_media/images/clouds_500.jpg");
+    }
+
+    /* All CSS rule for large screens go here*/
+    header img {
+        width: 10%;
+    }
+
+    header p {
+        font-size: 8vh;
+    }
+
+    nav {
+        font-size: 4vh;
+    }
+
+    nav ul {
+        padding: 4px;
+    }
+
+    .small {
+        font-size: 4vh;
+        text-align: left;
+    }
+
+    #sectionContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #sectionContainer section {
+        width: 30%;
+    }
+
+    #forecast {
+        display: block;
+    }
+
 }
-
-header p {
-    font-size: 8vh;
-}
-   nav{
-    font-size: 4vh;
-   }
-
-   nav ul{
-       padding: 4px;
-   }
-
-   .small{
-       font-size: 4vh;
-       text-align: left;
-   }
-
-   #sectionContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-#sectionContainer section{
-    width: 30%;
-}
-
-#forecast{
-    display: block;
-}
-
-}
-
