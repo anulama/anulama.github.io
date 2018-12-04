@@ -251,38 +251,38 @@ function buildPage(locData) {
             document.getElementById('speed').innerHTML = locData.windSpeed;
 
             //JSON HOURLY TEMP NEXT 12HRS
-            var i = 1;
-            var d = new Date();
-            var n = d.getHours();
-            console.log(n);
+          //  var i = 1;
+           // var d = new Date();
+            //var n = d.getHours();
+            //console.log(n);
 
-            let data = [locData.hourTemp1, locData.hourTemp2, locData.hourTemp3, locData.hourTemp4, locData.hourTemp5, locData.hourTemp6, locData.hourTemp7, locData.hourTemp8, locData.hourTemp9, locData.hourTemp10, locData.hourTemp11, locData.hourTemp12];
-             var myAside = document.querySelector('aside');
-             var myUl = document.createElement('ul');
-             myUl.className = "forecasthours";
-                    data.forEach(function (element) {
-                    let temp = data[i];
-                    var myLi = document.createElement('li');
-                    myLi.textContent = n + 'hrs:' + temp + 'F';
-                    myUl.appendChild(myLi);
-                    if (n == 23)
-                        n = -1;
-                    n += 1;
-                    i++; // Increase the counter by 1
-                }); // ends the foreach method
-             myAside.appendChild(myUl);
+            //let data = [locData.hourTemp1, locData.hourTemp2, locData.hourTemp3, locData.hourTemp4, locData.hourTemp5, locData.hourTemp6, locData.hourTemp7, locData.hourTemp8, locData.hourTemp9, locData.hourTemp10, locData.hourTemp11, locData.hourTemp12];
+             //var myAside = document.querySelector('aside');
+             //var myUl = document.createElement('ul');
+             //myUl.className = "forecasthours";
+                   // data.forEach(function (element) {
+                   // let temp = data[i];
+                    //var myLi = document.createElement('li');
+                    //myLi.textContent = n + 'hrs:' + temp + 'F';
+                    //myUl.appendChild(myLi);
+                    //if (n == 23)
+                      //  n = -1;
+                    //n += 1;
+                    //i++; // Increase the counter by 1
+                //}); // ends the foreach method
+             //myAside.appendChild(myUl);
              //Task 2 - Populate location information
              
 
             // Task 3 - Populate weather information
             //Call function build Wind Chill
-            buildWC(speed, temp);
+            //buildWC(speed, temp);
             //Call function build Wind Dial
-            windDial(direction);
+            //windDial(direction);
             //call function getCondition
-            const keyword = getCondition(phrase);
+            //const keyword = getCondition(phrase);
             //call funnction change Summary Image
-            changeSummaryImage(keyword);
+            //changeSummaryImage(keyword);
 
             // Task 4 - Hide status and show main
             let status = document.getElementById('status');
@@ -291,4 +291,3 @@ function buildPage(locData) {
             main.setAttribute('class', 'no');
 
         }
-
