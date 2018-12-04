@@ -29,7 +29,7 @@
 
     width: 150px;
 
-    background: no-repeat center/85% url('responsive_media/images/wind-pointer.png');
+    background: no-repeat center/85% url('/images/wind-pointer.png');
 
     z-index: 100;
 
