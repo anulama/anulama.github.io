@@ -146,7 +146,7 @@ function buildPage(locData) {
             document.getElementById("winddirection").innerHTML = locData.windDirection;
             document.getElementById("lowTemp").innerHTML = locData.pastLow;
             document.getElementById("conditionWeather").innerHTML = locData.summary;
-            document.getElementById("windgust").innerHTML = locData.win
+            document.getElementById("windgust").innerHTML = locData.windGust;
 
             //JSON HOURLY TEMP NEXT 12HRS
             var i = 1;
