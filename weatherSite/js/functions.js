@@ -305,4 +305,9 @@ function changeSummaryImage(keyword) {
             weatherimage.setAttribute("src", "images/clear_300.jpg");
             break;
     }
+    // Task 4 - Hide status and show main
+    let status = document.getElementById('status');
+    status.setAttribute('class', 'hide');
+    let main = document.getElementById('main');
+    main.setAttribute('class', 'no');
 }
