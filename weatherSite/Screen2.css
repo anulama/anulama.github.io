@@ -22,7 +22,9 @@
 }
 
 /* 3. Mobile Rules */
-
+footer img{
+    width: 90%;
+}
 #dial {
 
     height: 150px;
