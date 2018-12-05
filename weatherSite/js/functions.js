@@ -4,6 +4,19 @@
 //weatehr site JavaScript Functions
 //console.log('My javaScrip is being read.');
 
+const temp = 12;
+const speed = 2.3;
+const phrase = "Cloudy";
+const direction = "W"; //Set your own value
+//Call function build Wind Chill
+buildWC(speed, temp);
+//Call function build Wind Dial
+windDial(direction);
+//call function getCondition
+const keyword = getCondition(phrase);
+//call funnction change Summary Image
+changeSummaryImage(keyword);
+
 // Get location code from API
 function getCode(LOCALE) {
     const API_KEY = '2sw5vR3a2FasN7xaGtCVaKAG7adjboWt';
@@ -128,7 +141,7 @@ function buildPage(locData) {
             document.getElementById("zipCode").innerHTML = locData.postal;
             document.getElementById("elevation").innerHTML = locData.elevation;
             document.getElementById("location").innerHTML = locData.geoposition;
-            document.getElementById("currenttemp").innerHTML = locData.hourTemp1;
+            document.getElementById("currenttemp").innerHTML = locData.currentTemp;
             document.getElementById("highTemp").innerHTML = locData.pastHigh;
             document.getElementById("winddirection").innerHTML = locData.windDirection;
             document.getElementById("lowTemp").innerHTML = locData.pastLow;
@@ -273,23 +286,23 @@ function changeSummaryImage(keyword) {
     switch (keyword) {
         case "clouds":
             sectionContainer.setAttribute("class", "clouds"); //"clouds" is the CSS rule selector
-            weatherimage.setAttribute("src","images/clouds_300.jpg");
+            weatherimage.setAttribute("src", "images/clouds_300.jpg");
             break;
         case "rain":
             sectionContainer.setAttribute("class", "rain");
-            weatherimage.setAttribute("src","images/rain_300.jpg");
+            weatherimage.setAttribute("src", "images/rain_300.jpg");
             break;
         case "snow":
             sectionContainer.setAttribute("class", "snow");
-            weatherimage.setAttribute("src","images/snow_300.jpg");
+            weatherimage.setAttribute("src", "images/snow_300.jpg");
             break;
         case "fog":
             sectionContainer.setAttribute("class", "fog");
-            weatherimage.setAttribute("src","images/fog_300.jpg");
+            weatherimage.setAttribute("src", "images/fog_300.jpg");
             break;
         case "clear":
             sectionContainer.setAttribute("class", "clear");
-            weatherimage.setAttribute("src","images/clear_300.jpg");
+            weatherimage.setAttribute("src", "images/clear_300.jpg");
             break;
     }
 }

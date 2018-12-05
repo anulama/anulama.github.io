@@ -19,113 +19,116 @@
 
 <body>
     <div id="container">
-    <header>
-        <h1>
-            <img src="images/logo.jpeg" alt="umbrella logo"><b>The Weather Site</b>
-        </h1>
+        <header>
+            <h1>
+                <img src="images/logo.jpeg" alt="umbrella logo"><b>The Weather Site</b>
+            </h1>
 
-        <nav>
-            <ul>
-
-                <li><a href="index.html">Current</a></li>
-
-                <li><a href="#">Search</a></li>
-
-                <li><a href="franklinweather.html">Franklin ID</a></li>            
-
-
-                <li><a href="greenville.html">Greenville SC</a></li>
-
-            </ul>
-        </nav>
-
-
-    </header>
-
-    <main>
-
-        <h1>Greenville, SC</h1>
-
-        <p class="small"><b>Zip:</b>29601 |
-
-            <b>Elevation:</b>966 ft. |
-
-            <b>Location:</b>-82.4,34.85
-        </p>
-
-        <div id="sectionContainer" class="fog">
-            <section id="temp" class="title">
-                <h2><b>Temperature</b></h2>
-
-                <p class="big">65&deg;F</p>
-
-                <p><span class="red">72&deg;F</span> <span class="blue">51&deg;F</span></p><br>
-            </section>
-            <br/>
-            <section id="wind" class="title">
-                
-                    <div id="dial" class="w"></div>
-                <h2><b>Wind</b></h2>
-
-                <p> N</p>
-                <p> 8 mph</p>
-
+            <nav>
                 <ul>
-                    <li><b>Direction:</b>SW</li>
 
-                    <li><b>Gusts:</b>5mph</li>
+                    <li><a href="index.html">Current</a></li>
+
+                    <li><a href="#">Search</a></li>
+
+                    <li><a href="franklinweather.html">Franklin ID</a></li>
+
+
+                    <li><a href="greenville.html">Greenville SC</a></li>
+
                 </ul>
-            </section>
-            <br/>
-            <section id="weather" class="title">
+            </nav>
 
-                <h2><b>Thunderstorms</b></h2>
-                <img src="images/thunderstorm.jpg" alt="thunderstorm" />
-            </section>
-        </div>
 
-        <br /><br />
-        <section id="forecast" class="title">
-            <h3>Hourly Forecast</h3>
-            <p>
-                12am: 55
-                1am : 55
-                2am: 56
-                3am: 57
-                4am: 57
-                5am: 57
-                6am: 59
-                7am: 59
-                8am: 59
-                9am: 60
-                10am: 61
-                11am: 63
-                12pm: 64
-                1pm: 64
-                2pm: 66
-                3pm: 69
-                4pm: 71
-                5pm: 72
-                6pm: 71
-                7pm: 61
-                8pm: 57
-                9pm: 55
-                10pm: 52
-                11pm: 51
+        </header>
+
+        <main>
+
+            <h1>Greenville, SC</h1>
+
+            <p class="small"><b>Zip:</b>29601 |
+
+                <b>Elevation:</b>966 ft. |
+
+                <b>Location:</b>-82.4,34.85
             </p>
-        </section>
+
+            <div id="sectionContainer" class="clear">
+                <section id="temp" class="title">
+                    <h2><b>Temperature</b></h2>
+
+                    <p class="big">35&deg;F</p>
+
+                    <p><span class="red">64&deg;F</span> <span class="blue">21&deg;F</span></p><br>
+                    <p>Feels like <span id="feelTemp">31</span>&deg;F</p>
+                </section>
+                <br />
+                <section id="wind" class="title">
+
+                    <h2><b>Wind</b></h2>
+
+                    <p> N</p>
+                    <div id="dial" class="w"></div>
+                    <p id="windspeed"> 5 mph</p>
+
+                    <ul>
+                        <li><b>Direction:</b>SW</li>
+
+                        <li><b>Gusts:</b>5mph</li>
+                    </ul>
+                </section>
+                <br />
+                <section id="weather" class="title">
+
+                    <h2><b><span id="conditionWeather">Rain</span></b></h2>
+                    <img src="images/thunderstorm.jpg" alt="rain drop" />
+                </section>
+            </div>
+
+            <br /><br />
+            <section id="forecast" class="title">
+                <h3>Hourly Forecast</h3>
+                <p>
+                    12am: 41
+                    1am : 41
+                    2am: 41
+                    3am: 41
+                    4am: 41
+                    5am: 41
+                    6am: 42
+                    7am: 44
+                    8am: 44
+                    9am: 46
+                    10am: 49
+                    11am: 51
+                    12pm: 55
+                    1pm: 58
+                    2pm: 62
+                    3pm: 64
+                    4pm: 64
+                    5pm: 62
+                    6pm: 61
+                    7pm: 60
+                    8pm: 59
+                    9pm: 58
+                    10pm: 52
+                    11pm: 48
+                </p>
+            </section>
 
 
 
-    </main>
 
-    <footer>
 
-        &copy;2018 The Weather Site
+        </main>
 
-    </footer>
+        <footer>
+
+            &copy;2018 The Weather Site
+
+        </footer>
     </div>
-    <script src="/franklin weather/js/functions.js"></script>
+    <script src="js/functions.js"></script>
 </body>
 
 </html>
