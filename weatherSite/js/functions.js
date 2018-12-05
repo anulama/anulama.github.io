@@ -136,7 +136,7 @@ function buildPage(locData) {
             const direction = locData.windDirection; //Set your own value
 
             //JSON BASIC INFO CURRENT
-            document.getElementById("nameCity").innerHTML = locData.name;
+            document.getElementById("nameCity").innerHTML = locData.cityabbr;
             document.getElementById("cityAbbr").innerHTML = locData.stateAbbr;
             document.getElementById("zipCode").innerHTML = locData.postal;
             document.getElementById("elevation").innerHTML = locData.elevation;
@@ -305,9 +305,9 @@ function changeSummaryImage(keyword) {
             weatherimage.setAttribute("src", "images/clear_300.jpg");
             break;
     }
-    // Task 4 - Hide status and show main
-    let status = document.getElementById('status');
-    status.setAttribute('class', 'hide');
-    let main = document.getElementById('main');
-    main.setAttribute('class', 'no');
 }
+ // Task 4 - Hide status and show main
+ let status = document.getElementById('status');
+ status.setAttribute('class', 'hide');
+ let main = document.getElementById('main');
+ main.setAttribute('class', 'no');
