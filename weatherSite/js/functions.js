@@ -289,7 +289,7 @@ function changeSummaryImage(keyword) {
             break;
         case "clear":
             sectionContainer.setAttribute("class", "clear");
-            weatherimage.setAttribute("src","images/clear.jpg");
+            weatherimage.setAttribute("src","images/clear_300.jpg");
             break;
     }
 }
