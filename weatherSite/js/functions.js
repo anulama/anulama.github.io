@@ -277,19 +277,19 @@ function changeSummaryImage(keyword) {
             break;
         case "rain":
             sectionContainer.setAttribute("class", "rain");
-            weatherimage.setAttribute("src","images/clouds_300.jpg");
+            weatherimage.setAttribute("src","images/rain_300.jpg");
             break;
         case "snow":
             sectionContainer.setAttribute("class", "snow");
-            weatherimage.setAttribute("src","images/clouds_300.jpg");
+            weatherimage.setAttribute("src","images/snow_300.jpg");
             break;
         case "fog":
             sectionContainer.setAttribute("class", "fog");
-            weatherimage.setAttribute("src","images/clouds_300.jpg");
+            weatherimage.setAttribute("src","images/fog_300.jpg");
             break;
         case "clear":
             sectionContainer.setAttribute("class", "clear");
-            weatherimage.setAttribute("src","images/clouds_300.jpg");
+            weatherimage.setAttribute("src","images/clear.jpg");
             break;
     }
 }
