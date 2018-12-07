@@ -1,0 +1,148 @@
+<!doctype html>
+
+<html lang="en-us">
+
+<head>
+    <title>Current City, ID</title>
+    <meta charset="UTF-8">
+
+    <meta name="description" content="Short Description of the page.">
+
+    <meta name="viewport" content="width=device-width">
+
+    <link href="Screen2.css" rel="stylesheet" type="text/css" media="screen">
+
+</head>
+
+<!-----worked with Matthew, Avinash, Jaden and Hilkias for current page assignmnet-->
+
+<body>
+    <div id="container">
+        <header>
+            <h1>
+                <img src="images/logo.jpeg" alt="umbrella logo"><b>The Weather Site</b>
+            </h1>
+
+            <nav>
+                <ul>
+
+                    <li><a href="index.html">Current</a></li>
+
+                    <li><a href="search.html">Search</a></li>
+
+                    <li><a href="franklinweather.html">Franklin ID</a></li>
+
+
+                    <li><a href="greenville.html">Greenville SC</a></li>
+
+                </ul>
+            </nav>
+            <section>
+                <form method="get" action="https://www.accuweather.com/en/search-locations" id="searchform">
+                 <input type="search" name="query" id="query">
+                 <input type="submit" name="submit" value="Search" id="send">
+                </form>
+                <div id="searchResults" class=""></div>
+               </section>
+
+        </header>
+        <p id="status"></p>
+        <main id="main">
+
+            <h1><span id="nameCity">???????</span>, <span id="cityAbbr">??</span></h1>
+
+            <p class="small"><b>Zip:</b><span id="zipCode">83440</span> |
+
+                <b>Elevation:</b><span id="elevation">4968</span> ft. |
+
+                <b>Location:</b><span id="location">42.0135,111.8072</span>
+            </p>
+
+            <div id="sectionContainer" class="clear">
+                <section id="temp" class="title">
+                    <h2><b>Temperature</b></h2>
+
+                    <p class="big"><span id="currenttemp">55</span>&deg;F</p>
+
+                    <p><span class="red"><span id="highTemp">64</span>&deg;F</span> <span class="blue"><span id="lowTemp">41</span>&deg;F</span></p><br>
+                    <p>Feels like <span id="feelTemp">21</span>&deg;F</p>
+                </section>
+                <br />
+                <section id="wind" class="title">
+
+                    <h2><b>Wind</b></h2>
+
+                    <p> N</p>
+                    <div id="dial" class="w"></div>
+                    <p id="windspeed"> 5 mph</p>
+
+                    <ul>
+                        <li><b>Direction:</b><span id="winddirection">W</span></li>
+
+                        <li><b>Gusts:</b><span id="windgust">5</span>mph</li>
+                    </ul>
+                </section>
+                <br />
+                <section id="weather" class="title">
+
+                    <h2><b><span id="conditionWeather">Rain</span></b></h2>
+                    <img id="weatherimage" src="images/rain-drop.jpg" alt="rain drop" />
+                </section>
+            </div>
+
+            <br /><br />
+            <section id="forecast" class="title">
+                <h3>Hourly Forecast</h3>
+                <aside>
+                    <!--                JSON FILE INFORMATION 12 HOURS-->
+                </aside>
+            </section>
+            <!--
+            <section id="forecast" class="title">
+                <h3>Hourly Forecast</h3>
+                <p>
+                    12am: 41
+                    1am : 41
+                    2am: 41
+                    3am: 41
+                    4am: 41
+                    5am: 41
+                    6am: 42
+                    7am: 44
+                    8am: 44
+                    9am: 46
+                    10am: 49
+                    11am: 51
+                    12pm: 55
+                    1pm: 58
+                    2pm: 62
+                    3pm: 64
+                    4pm: 64
+                    5pm: 62
+                    6pm: 61
+                    7pm: 60
+                    8pm: 59
+                    9pm: 58
+                    10pm: 52
+                    11pm: 48
+                </p>
+            </section>
+-->
+
+
+
+
+
+        </main>
+
+        <footer>
+            &copy;2018 The Weather Site
+
+             <img src="images/AW_RGB.jpg" alt="logo">
+        </footer>
+    </div>
+    <script src="js/functions.js"></script>
+    <script src="js/search.js"></script>
+</body>
+
+</html>
