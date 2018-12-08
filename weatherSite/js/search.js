@@ -14,7 +14,7 @@ QUERY.addEventListener("keyup", function () {
  const SEARCH= document.getElementById('searchResults');
 
  // Intercept the link clicks
- SEARCH.addEventListener(function getLocationByKey(cityKey) {
+ SEARCH.addEventListener(function(evt) {
   console.log(event.target.dataset.key);
   let Key = evt.target.dataset['key'];
   if (key != null){
