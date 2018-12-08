@@ -26,7 +26,7 @@ QUERY.addEventListener("keyup", function () {
 
    // Request data and build the list of matching locations
     function processJSON(searchValue) {
-      let search=document.getElementById('searchResult');
+      let search=document.getElementById('searchResults');
       if (search.getAttribute('class')== 'hide'){
         search.setAttribute('class', 'na');
       }
