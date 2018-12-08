@@ -3,18 +3,16 @@
 <html lang="en-us">
 
 <head>
-    <title>Current City, ID</title>
+  
     <meta charset="UTF-8">
-
-    <meta name="description" content="Short Description of the page.">
-
+    <title>search city</title>
+    <meta name ="anuthor" content ="Anu Lama">
+    <meta name="description" content="weather page for current and search">
     <meta name="viewport" content="width=device-width">
-
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
     <link href="Screen2.css" rel="stylesheet" type="text/css" media="screen">
 
 </head>
-
-
 <body>
     <div id="container">
         <header>
@@ -23,7 +21,7 @@
             </h1>
 
             <nav>
-                <ul>
+                <ul id="links"> 
 
                     <li><a href="index.html">Current</a></li>
 
@@ -36,6 +34,7 @@
 
                 </ul>
             </nav>
+            <span id='status' class='hide'></span>
             <section>
                 <form method="get" action="https://www.accuweather.com/en/search-locations" id="searchform">
                  <input type="search" name="query" id="query">
@@ -46,51 +45,50 @@
 
         </header>
         <p id="status"></p>
-        <main id="main">
-
+        <main id='main' class='hide'>
+            <h1 id="pagename">???????</h1>
+            <ul id="locationInfo">
             <h1><span id="nameCity">???????</span>, <span id="cityAbbr">??</span></h1>
 
-            <p class="small"><b>Zip:</b><span id="zipCode">83440</span> |
+            <p class="small"><b>Zip:</b><span id="zipCode">8740</span> |
 
-                <b>Elevation:</b><span id="elevation">4968</span> ft. |
+                <b>Elevation:</b><span id="elevation">485</span> ft. |
 
                 <b>Location:</b><span id="location">42.0135,111.8072</span>
             </p>
+        </ul>
 
-            <div id="sectionContainer" class="clear">
-                <section id="temp" class="title">
-                    <h2><b>Temperature</b></h2>
-
-                    <p class="big"><span id="currenttemp">55</span>&deg;F</p>
-
-                    <p><span class="red"><span id="highTemp">64</span>&deg;F</span> <span class="blue"><span id="lowTemp">41</span>&deg;F</span></p><br>
-                    <p>Feels like <span id="feelTemp">21</span>&deg;F</p>
-                </section>
-                <br />
-                <section id="wind" class="title">
-
-                    <h2><b>Wind</b></h2>
-
-                    <p> N</p>
-                    <div id="dial" class="w"></div>
-                    <p id="windspeed"> 5 mph</p>
-
+        <div id = "background" class = '??'>
+                <section id = "temperature" class = "tile">
+                    <h2> Temperature</h2>
                     <ul>
-                        <li><b>Direction:</b><span id="winddirection">W</span></li>
-
-                        <li><b>Gusts:</b><span id="windgust">5</span>mph</li>
+                        <li id = "current"><span id = 'temp'>??</span> &deg;F</li>
+                        <li class = "line2" id = "high"><span id = 'high2'>??</span>&deg;F</li> 
+                        <li class = "line2" id = "low"><span id = 'low2'>??</span>&deg;F</li>
+                        <li id = "feelsLike"></li>
                     </ul>
                 </section>
-                <br />
-                <section id="weather" class="title">
-
-                    <h2><b><span id="conditionWeather">Rain</span></b></h2>
-                    <img id="weatherimage" src="images/rain-drop.jpg" alt="rain drop" />
+                <section id = "wind" class = "tile">
+                    <h2>Wind</h2>
+                    <p>N</p>
+                    <div id = 'dial' class = 's'>
+                    </div>
+                    <ul>
+                        <li id = "windSpeed"><span id = 'speed'>??</span> mph</li>
+                        <li>Direction: <span id = 'direction'>??</span></li> 
+                        <li>Gusts: <span id = 'gusts'>??</span></li>
+                    </ul>
+                </section>
+                <section id = "condition" class = "tile">
+                    <h2 id = 'curCondition'>Cloudy</h2>
+                    <ul>
+                   <li> <img id="weatherimage" src="images/rain-drop.jpg" alt="rain drop" />
+                   </li>
+                   </ul>
                 </section>
             </div>
 
-            <br /><br />
-            <section id="forecast" class="title">
+            <section class="boxed Forecast">
                 <h3>Hourly Forecast</h3>
                 <aside>
                     <!--                JSON FILE INFORMATION 12 HOURS-->

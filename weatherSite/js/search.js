@@ -10,8 +10,26 @@ QUERY.addEventListener("keyup", function () {
     processJSON(searchValue);
    }); // ends the eventListener
 
+ // Get element where clicks will occur
+ const SEARCH= document.getElementById('searchResults');
+
+ // Intercept the link clicks
+ SEARCH.addEventListener(function getLocationByKey(cityKey) {
+  console.log(event.target.dataset.key);
+  let Key = evt.target.dataset['key'];
+  if(key != null){
+  evt.preventDefault();
+  getLocationByKey(key);
+  }
+ 
+ });
+
    // Request data and build the list of matching locations
-function processJSON(searchValue) {
+    function processJSON(searchValue) {
+      let search=document.getElementById('searchResult');
+      if (search.getAttribute('class'=='hide'){
+        search.setAttribute('class', 'na');
+      }
     // Get Data from the Autocomplete API
     const API_KEY = "2sw5vR3a2FasN7xaGtCVaKAG7adjboWt";
     let URL = "https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=" + API_KEY + "&q=" + searchValue;
@@ -36,4 +54,7 @@ function processJSON(searchValue) {
       let searchResults = document.getElementById("searchResults");
       searchResults.innerHTML = list;
     })  .catch(error => console.log('There was an error: ', error))
+  document.getElementsByTagName("serachResults")[0].setAttribute("class", "");
   } // ends the processJSON function
+
+  
