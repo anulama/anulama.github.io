@@ -16,7 +16,7 @@ QUERY.addEventListener("keyup", function () {
  // Intercept the link clicks
  SEARCH.addEventListener('click',function(evt) {
   console.log(event.target.dataset.key);
-  let Key = evt.target.dataset['key'];
+  let key = evt.target.dataset['key'];
   if (key != null){
   evt.preventDefault();
   getLocationByKey(key);
