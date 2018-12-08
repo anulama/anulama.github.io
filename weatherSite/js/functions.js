@@ -185,7 +185,11 @@ function buildPage(locData) {
              document.getElementById("status").setAttribute("class", "hide");
              document.getElementById("searchResults").setAttribute("class", "hide");
              document.getElementsByTagName("MAIN")[0].setAttribute("class", "");
- 
+ // Task 4 - Hide status and show main
+ let status = document.getElementById('status');
+ status.setAttribute('class', 'hide');
+ let main = document.getElementById('main');
+ main.setAttribute('class', 'no');
          })
          .catch(error => console.log('There was an error: ', error))
  
@@ -310,11 +314,7 @@ function changeSummaryImage(keyword) {
             break;
     }
 }
- // Task 4 - Hide status and show main
- let status = document.getElementById('status');
- status.setAttribute('class', 'hide');
- let main = document.getElementById('main');
- main.setAttribute('class', 'no');
+ 
 
  // Get location info, based on city key, from API
 function getLocationByKey(cityKey) {

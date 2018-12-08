@@ -53,8 +53,7 @@ QUERY.addEventListener("keyup", function () {
       // Inject the list to the search page
       let searchResults = document.getElementById("searchResults");
       searchResults.innerHTML = list;
-    })  .catch(error => console.log('There was an error: ', error))
-  document.getElementsByTagName("serachResults")[0].setAttribute("class", "");
+    })  .catch(error => console.log('There was an error: ', error));
    } // ends the processJSON function
 
   
