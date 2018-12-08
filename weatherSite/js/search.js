@@ -17,7 +17,7 @@ QUERY.addEventListener("keyup", function () {
  SEARCH.addEventListener(function getLocationByKey(cityKey) {
   console.log(event.target.dataset.key);
   let Key = evt.target.dataset['key'];
-  if(key != null){
+  if (key != null){
   evt.preventDefault();
   getLocationByKey(key);
   }
@@ -27,7 +27,7 @@ QUERY.addEventListener("keyup", function () {
    // Request data and build the list of matching locations
     function processJSON(searchValue) {
       let search=document.getElementById('searchResult');
-      if (search.getAttribute('class'=='hide'){
+      if (search.getAttribute('class')== 'hide'){
         search.setAttribute('class', 'na');
       }
     // Get Data from the Autocomplete API
@@ -48,13 +48,13 @@ QUERY.addEventListener("keyup", function () {
         let stateCode = data[i].AdministrativeArea.ID;
         let locationName = cityName+', '+stateCode;
         list += "<li><a data-key='" + cityKey + "' href='https://www.accuweather.com/ajax-service/select-city?cityId=" + cityKey + "&lang=en-us' title='See weather information for " + locationName + "' target='_blank'>" + locationName + "</a></li>";
-      };
+      }
       list += '</ul>';
       // Inject the list to the search page
       let searchResults = document.getElementById("searchResults");
       searchResults.innerHTML = list;
     })  .catch(error => console.log('There was an error: ', error))
   document.getElementsByTagName("serachResults")[0].setAttribute("class", "");
-  } // ends the processJSON function
+   } // ends the processJSON function
 
   
